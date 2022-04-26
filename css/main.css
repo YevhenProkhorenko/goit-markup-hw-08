@@ -220,6 +220,10 @@ a {
   .logo {
     margin-right: 88px;
   }
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
   .nav-list {
     display: flex;
     align-items: center;
@@ -284,8 +288,10 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
   .navigation {
+    display: flex;
+    align-items: center;
     margin-right: auto;
   }
   .nav-list {
@@ -323,6 +329,7 @@ a {
   }
   .header-contacts {
     display: flex;
+    margin-right: auto;
     margin-left: auto;
   }
   .header-contacts__item:not(:last-child) {
