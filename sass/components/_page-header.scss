@@ -8,6 +8,10 @@
     display: flex;    
     align-items: center;    
 }
+.navigation {
+    display: flex;
+    align-items: center;
+}
 
 // - 767px
 @media screen and (max-width: 767px) {
@@ -135,10 +139,7 @@
     .logo{
         margin-right: 88px;
     }
-    .navigation {
-        display: flex;
-        align-items: center;        
-    }    
+      
     .nav-list {
         display: flex;        
         align-items: center;        
@@ -179,7 +180,6 @@
     }
 
     .header-contacts{
-        
         margin-left: auto;
     }
     .header-contacts__item{        
@@ -209,15 +209,9 @@
 }
 
 // screen 1200px+
-@media screen and (min-width: 1200px) {
-    .logo{
-        
-        // margin-left: auto;
-    }
+@media screen and (min-width: 1200px) {  
 
     .navigation {
-        display: flex;
-        align-items: center;
         margin-right: auto;
     }
     
@@ -265,7 +259,7 @@
     
     .header-contacts {
         display: flex;
-        margin-right: auto;        
+        margin-left: auto;                
     }
     
     .header-contacts__item:not(:last-child) {

@@ -110,6 +110,11 @@ a {
   align-items: center;
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 767px) {
   .header__container {
     justify-content: space-between;
@@ -215,10 +220,6 @@ a {
   .logo {
     margin-right: 88px;
   }
-  .navigation {
-    display: flex;
-    align-items: center;
-  }
   .nav-list {
     display: flex;
     align-items: center;
@@ -285,8 +286,6 @@ a {
 
 @media screen and (min-width: 1200px) {
   .navigation {
-    display: flex;
-    align-items: center;
     margin-right: auto;
   }
   .nav-list {
@@ -324,7 +323,7 @@ a {
   }
   .header-contacts {
     display: flex;
-    margin-right: auto;
+    margin-left: auto;
   }
   .header-contacts__item:not(:last-child) {
     margin-right: 30px;
