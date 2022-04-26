@@ -2,16 +2,21 @@
    display: flex;   
 }
 .social-list__item{
+    margin-right: 20px;
+    margin-bottom: 48px;
     font-family: inherit;    
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22; 
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em;    
     
-    color: var(--accent-page-color);
-    &:not(:last-child) {
-        margin-right: 20px;
-    }
+}
+.social-list__link{
+color: var(--accent-page-color);
+
+&:not(:last-child) {
+    margin-right: 20px;
+}
 }
 
 
