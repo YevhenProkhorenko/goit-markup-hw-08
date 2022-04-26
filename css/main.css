@@ -130,6 +130,28 @@ a {
   color: var(--accent-page-color);
 }
 
+.header-contacts__link {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  transition: color 250ms var(--main-cubic-bezier);
+}
+
+.header-contacts__link:hover, .header-contacts__link:focus {
+  color: var(--accent-page-color);
+}
+
+.header-contacts__icon {
+  cursor: pointer;
+  transition: fill 250ms var(--main-cubic-bezier);
+}
+
+.header-contacts__link:hover .header-contacts__icon,
+.header-contacts__link:focus .header-contacts__icon {
+  fill: var(--accent-page-color);
+}
+
 @media screen and (max-width: 767px) {
   .header__container {
     justify-content: space-between;
@@ -259,22 +281,8 @@ a {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
   }
-  .header-contacts__link {
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
-    transition: color 250ms var(--main-cubic-bezier);
-  }
-  .header-contacts__link:hover, .header-contacts__link:focus {
-    color: var(--accent-page-color);
-  }
   .header-contacts__icon {
-    transition: fill 250ms var(--main-cubic-bezier);
-  }
-  .header-contacts__link:hover .header-contacts__icon,
-  .header-contacts__link:focus .header-contacts__icon {
-    fill: var(--accent-page-color);
+    margin-right: 8px;
   }
 }
 
@@ -307,27 +315,9 @@ a {
   .header-contacts__link {
     display: flex;
     align-items: center;
-    font-family: inherit;
-    color: var(--primary-text-color);
-    text-decoration: none;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: var(--main-cubic-bezier);
-  }
-  .header-contacts__link:focus, .header-contacts__link:hover {
-    color: var(--accent-page-color);
   }
   .header-contacts__icon {
-    fill: var(--primary-text-color);
     margin-right: 10px;
-    cursor: pointer;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: var(--main-cubic-bezier);
-  }
-  .contacts__link:focus .header-contacts__icon,
-  .contacts__link:hover .header-contacts__icon {
-    fill: var(--accent-page-color);
   }
 }
 
