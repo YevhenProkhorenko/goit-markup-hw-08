@@ -214,7 +214,13 @@ a {
     display: none;
   }
   .mobile-menu {
+    display: block;
+  }
+  .nav-list {
     display: flex;
+  }
+  .contacts {
+    display: block;
   }
 }
 
