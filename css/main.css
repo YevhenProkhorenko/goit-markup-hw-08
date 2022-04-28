@@ -19,6 +19,20 @@
   --main-cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hero__tittle {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 360px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-page-color);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -352,6 +366,9 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  .hero {
+    height: 400px;
+  }
   .overlay {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/mobile-bg-hero.jpg);
   }
