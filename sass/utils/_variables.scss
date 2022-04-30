@@ -39,7 +39,7 @@
 	}
 }
 
-.section-tittle {
+.section__tittle {
 	margin-bottom: 50px;
 	font-weight: 700;
 	font-size: 36px;
@@ -56,8 +56,11 @@
 	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-
 	color: var(--secondary-text-color);
+	@media screen and (max-width: 767px) {
+		text-align: center;
+		
+	}
 }
 .modal-form__tittle{
 	font-weight: 700;
@@ -71,8 +74,8 @@
 	}
 }
 
-.text {
-	width: 270px;
+.advantages__text {
+	width: 100%;
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
