@@ -24,23 +24,28 @@
     @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;
-        margin-right: -30px;
-        margin-bottom: -30px;
+        margin-left: -30px;
+        margin-top: -30px;
+
         
     }
     @media screen and (min-width: 1200px) {
         display: flex;
-            align-items: center;
+        align-items: center;
     }   
 
 }
 .advantages__item{    
 
-    &:not(:last-child) {
-        margin-bottom: 30px;
-    
-        @media screen and (min-width: 768px) {
-            flex-basis: calc((100% - 30px) / 2);            
-        }
+    @media screen and (min-width:480px) {
+            &:not(:last-child) {
+                margin-bottom: 30px; 
+            }
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 40px) / 4);
+        margin-left: 30px;
+        margin-top: 30px;
     }
 }
