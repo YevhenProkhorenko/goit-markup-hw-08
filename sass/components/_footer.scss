@@ -8,16 +8,39 @@
     @media screen and (max-width: 767px) {
         text-align: center;
     }
-    // display: flex;
-    // align-items: baseline;
 }
 .footer-contacts-wrapper {
-    @media screen and (max-width: 767px) {
+    
+    @media screen and (max-width: 1199px) {
         margin-bottom: 60px;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & .logo{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        }
     }
     // display: flex;
     // flex-direction: column;
-    // flex-grow: 1;
+    // flex-grow: 1; 
+}
+@media screen and (min-width: 768px) {
+    .footer-tablet-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+.address-list__item{
+        @media screen and (min-width: 767px) {
+            text-align: center;
+        }
 }
 .address-list__item:not(:last-child) {
     margin-bottom: 8px;
@@ -25,6 +48,7 @@
         margin-bottom: 9px;
     }    
 }
+
 
 .address-list__text {
     font-family: inherit;
@@ -40,6 +64,7 @@
     &:focus {
         color: var(--accent-page-color);
     }
+    
 }
 
 .address-list__contacts {
@@ -111,12 +136,7 @@
     @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
-    }
-    // & .button {
-    //     @include flex;
-    //     height: 50px;
-    // }
-    
+    }    
 }
 
 .newsletter__input {
