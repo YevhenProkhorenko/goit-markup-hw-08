@@ -42,13 +42,19 @@
 }
 
 .section__tittle {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .section__tittle {
+    margin-bottom: 50px;
+  }
 }
 
 .secondary-tittle {
@@ -789,13 +795,57 @@ a {
   }
 }
 
+.section--other-background {
+  background-color: var(--team-section-color);
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+  }
+}
+
+.team-list__item {
+  width: 100%;
+  background: var(--primary-page-color);
+  box-shadow: 0px 1px 3px var(--first-card-shadow), 0px 1px 1px var(--second-card-shadow), 0px 2px 1px var(--third-card-shadow);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+
+.team-card__tittle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.team-card__text {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
 .social-list {
   display: flex;
+  justify-content: center;
 }
 
 .social-list__item {
-  margin-right: 20px;
-  margin-bottom: 48px;
+  margin-bottom: 30px;
   font-family: inherit;
   font-weight: 500;
   font-size: 18px;
@@ -804,11 +854,30 @@ a {
 }
 
 .social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   color: var(--accent-page-color);
+  transition: background-color 250ms var(--main-cubic-bezier);
 }
 
-.social-list__link:not(:last-child) {
-  margin-right: 20px;
+.social-list__link:focus, .social-list__link:hover {
+  background-color: var(--accent-page-color);
+}
+
+.social-list__icon {
+  fill: var(--social-icon-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--main-cubic-bezier);
+}
+
+.social-list__link:focus .social-list__icon,
+.social-list__link:hover .social-list__icon {
+  fill: var(--primary-page-color);
 }
 
 .footer {
