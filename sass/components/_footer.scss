@@ -2,13 +2,28 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--hero-footer-color);
+    
 }
 .footer-wrapper {
-    display: flex;
-    align-items: baseline;
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+    // display: flex;
+    // align-items: baseline;
 }
-.address-list:not(:last-child) {
-    margin-bottom: 9px;
+.footer-contacts-wrapper {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+    // display: flex;
+    // flex-direction: column;
+    // flex-grow: 1;
+}
+.address-list__item:not(:last-child) {
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }    
 }
 
 .address-list__text {
@@ -31,14 +46,14 @@
     color: var(--address-list__contacts-color);
 }
 
-.contacts-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
+// .contacts-wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     flex-grow: 1;
+// }
 
 .footer-social-container {
-    margin-left: 70px;
+    
     & .secondary-tittle {
         margin-bottom: 20px;
     }
@@ -61,24 +76,47 @@
     & .social-list__link:focus .social-list__icon {
     fill: var(--primary-page-color);
 }
-
+@media screen and (max-width: 767px) {
+    margin-bottom: 60px;    
+}
+@media screen and (min-width: 1200px) {
+    margin-left: 70px;
+}
 }
 
 .newsletter-wrapper {
-    margin-left: 93px;
-    width: 570px;
+    
     & .secondary-tittle {
+        margin-bottom: 20px;
         color: var(--primary-page-color);
     }
+    @media screen and (min-width: 1200px){
+    margin-left: 93px;
+    width: 570px;
+}    
 }
 
 .newsletter {
+    
+        & .button {
+            @include flex;
+            height: 50px;
+        }
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
+        & .button{
+            margin: 0 auto;
+        }
+    }
+    @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
-    & .button {
-        @include flex;
-        height: 50px;
     }
+    // & .button {
+    //     @include flex;
+    //     height: 50px;
+    // }
+    
 }
 
 .newsletter__input {
@@ -96,6 +134,10 @@
         font-size: 16px;
         line-height: 1.25;
         color: var(--footer-contacts-color);
+    }
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 

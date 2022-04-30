@@ -7,8 +7,12 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22; 
-    letter-spacing: 0.02em;    
-    
+    letter-spacing: 0.02em;
+    @media screen and (max-width: 767px) {
+        .footer-social-container &:not(:last-child){
+            margin-right: 10px;
+        }
+    }    
 }
 
 .social-list__link {
@@ -21,7 +25,11 @@
     &:focus,
     &:hover {
         background-color: var(--accent-page-color);
-    }   
+    }
+    .mobile-menu__container &{
+        display: block;
+        margin-right: 10px;
+    }
 }
 
 .social-list__icon {
