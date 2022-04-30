@@ -96,6 +96,7 @@
     }
 
     .mobile-menu__container {
+        height: 100vw;
         position: relative;
         padding-top: 48px;
         padding-bottom: 48px;
@@ -110,10 +111,26 @@
         padding: 0;
         line-height: 0;
     }
+    .mobile-social-list {
+        display: flex;
+    }
+    
+    .mobile-social-list__item {
+        margin-right: 10px;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+    }
+    
+    .mobile-social-list__link {
+        color: var(--accent-page-color)
+    }
 
     .nav-list__link {        
         font-size: 40px;
-        line-height: 1.17;        
+        line-height: 1.17;             
     }
 
     .nav-list__item:not(:last-child) {
@@ -135,6 +152,7 @@
         font-size: 34px;
         line-height: 1.17;
         letter-spacing: 0.02em;
+        color: var(--accent-page-color);
     }
 
     .contacts__link--mail {

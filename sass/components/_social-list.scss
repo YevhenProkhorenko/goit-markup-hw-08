@@ -2,18 +2,14 @@
    display: flex;
    justify-content: center;   
 }
-.social-list__item{    
-    font-family: inherit;    
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22; 
-    letter-spacing: 0.02em;
+.social-list__item{ 
     @media screen and (max-width: 767px) {
         .footer-social-container &:not(:last-child){
             margin-right: 10px;
         }
     }    
 }
+
 
 .social-list__link {
     @include flex;
@@ -25,10 +21,6 @@
     &:focus,
     &:hover {
         background-color: var(--accent-page-color);
-    }
-    .mobile-menu__container &{
-        display: block;
-        margin-right: 10px;
     }
 }
 

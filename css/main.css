@@ -297,6 +297,7 @@ a {
     pointer-events: auto;
   }
   .mobile-menu__container {
+    height: 100vw;
     position: relative;
     padding-top: 48px;
     padding-bottom: 48px;
@@ -309,6 +310,20 @@ a {
     border: none;
     padding: 0;
     line-height: 0;
+  }
+  .mobile-social-list {
+    display: flex;
+  }
+  .mobile-social-list__item {
+    margin-right: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  }
+  .mobile-social-list__link {
+    color: var(--accent-page-color);
   }
   .nav-list__link {
     font-size: 40px;
@@ -330,6 +345,7 @@ a {
     font-size: 34px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+    color: var(--accent-page-color);
   }
   .contacts__link--mail {
     font-size: 24px;
@@ -896,14 +912,6 @@ a {
   justify-content: center;
 }
 
-.social-list__item {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-}
-
 @media screen and (max-width: 767px) {
   .footer-social-container .social-list__item:not(:last-child) {
     margin-right: 10px;
@@ -923,11 +931,6 @@ a {
 
 .social-list__link:focus, .social-list__link:hover {
   background-color: var(--accent-page-color);
-}
-
-.mobile-menu__container .social-list__link {
-  display: block;
-  margin-right: 10px;
 }
 
 .social-list__icon {
