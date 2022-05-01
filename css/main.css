@@ -1046,7 +1046,7 @@ a {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .address-list__item {
     text-align: center;
   }
@@ -1125,6 +1125,13 @@ a {
   color: var(--primary-page-color);
 }
 
+@media screen and (min-width: 768px) {
+  .newsletter-wrapper {
+    display: block;
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .newsletter-wrapper {
     margin-left: 93px;
@@ -1139,7 +1146,7 @@ a {
   height: 50px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .newsletter {
     margin-left: auto;
   }
@@ -1157,6 +1164,7 @@ a {
 
 .newsletter__input {
   margin-right: 12px;
+  margin-bottom: 20px;
   padding-left: 12px;
   width: 358px;
   height: 50px;
@@ -1177,7 +1185,12 @@ a {
 @media screen and (max-width: 767px) {
   .newsletter__input {
     width: 100%;
-    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .newsletter__input {
+    width: 450px;
   }
 }
 
