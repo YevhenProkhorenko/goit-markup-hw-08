@@ -20,7 +20,7 @@
 
     .overlay {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-            url('/images/mobile-bg-hero.jpg');
+            url('../images/mobile-bg-hero.jpg');
             
         }
     @media (min-device-pixel-ratio: 2),
@@ -28,7 +28,7 @@
     (min-resolution: 2dppx) {
         .overlay {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url('/images/mobile-bg-hero@2x.jpg');
+            url('../images/mobile-bg-hero@2x.jpg');
         }
     }
 }
@@ -38,7 +38,7 @@
 @media screen and (min-width:768px) {
     .overlay {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-        url('/images/tablet-bg-hero.jpg');
+        url('../images/tablet-bg-hero.jpg');
 
 }
 
@@ -47,7 +47,7 @@
     (min-resolution: 2dppx) {
         .overlay {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url('/images/tablet-bg-hero@2x.jpg');
+            url('../images/tablet-bg-hero@2x.jpg');
     }
 }
 }
@@ -63,14 +63,14 @@
     }
     .overlay{
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('/images/desktop-bg-hero.jpg');
+        url('../images/desktop-bg-hero.jpg');
     }
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .overlay {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url('/images/desktop-bg-hero@2x.jpg');
+                url('../images/desktop-bg-hero@2x.jpg');
         }
     }
     
