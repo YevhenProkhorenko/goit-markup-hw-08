@@ -7,6 +7,11 @@
 .footer-wrapper {
     @media screen and (max-width: 767px) {
         text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: baseline;
+        align-items: baseline;
     }    
 }
 .footer-contacts-wrapper {
@@ -21,24 +26,26 @@
         align-items: center;
         & .logo{
         margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
+        margin-right: auto;        
         }
     }
-    // display: flex;
-    // flex-direction: column;
-    // flex-grow: 1; 
-}
-@media screen and (min-width: 768px) {
-    .footer-tablet-wrapper {
-        display: flex;
-        justify-content: space-around;
+    @media screen and (min-width: 1200px) {
+        display: block;
     }
 }
+.footer-tablet-wrapper {
+    @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    }
+
+    
+}
+
 
 
 .address-list__item{
-        @media screen and (min-width: 768px) {
+        @media screen and (max-width: 1199px) {
             text-align: center;
         }
 }
@@ -71,12 +78,6 @@
     color: var(--address-list__contacts-color);
 }
 
-// .contacts-wrapper {
-//     display: flex;
-//     flex-direction: column;
-//     flex-grow: 1;
-// }
-
 .footer-social-container {
     
     & .secondary-tittle {
@@ -101,10 +102,17 @@
     & .social-list__link:focus .social-list__icon {
     fill: var(--primary-page-color);
 }
+@media screen and (max-width: 1199px) {
+    & .secondary-tittle {
+        text-align: center;
+    }
+}
 @media screen and (max-width: 767px) {
     margin-bottom: 60px;    
 }
+
 @media screen and (min-width: 1200px) {
+    
     margin-left: 70px;
 }
 }
@@ -115,8 +123,7 @@
         margin-bottom: 20px;
         color: var(--primary-page-color);
     }
-    @media screen and (min-width: 768px) {
-        display: block;
+    @media screen and (max-width: 1199px) {        
         text-align: center;
 
     }
@@ -139,8 +146,7 @@
         }
     }
     @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: center;
+    display: flex;        
     }    
 }
 

@@ -3,11 +3,9 @@
    justify-content: center;   
 }
 .social-list__item{ 
-    @media screen and (max-width: 767px) {
-        .footer-social-container &:not(:last-child){
-            margin-right: 10px;
-        }
-    }    
+    .footer-social-container &:not(:last-child) {
+        margin-right: 10px;
+    }
 }
 
 
