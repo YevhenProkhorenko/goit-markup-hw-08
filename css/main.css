@@ -315,12 +315,23 @@ a {
     display: flex;
   }
   .mobile-social-list__item {
-    margin-right: 10px;
+    margin-right: 20px;
     font-family: inherit;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
+    position: relative;
+  }
+  .mobile-social-list__item:not(:last-child)::after {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    content: "";
+    width: 2px;
+    height: 100%;
+    bottom: 36.8px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
   }
   .mobile-social-list__link {
     color: var(--accent-page-color);
