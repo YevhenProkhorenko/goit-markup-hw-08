@@ -288,6 +288,7 @@ a {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     opacity: 0;
     visibility: hidden;
+    z-index: 1;
     pointer-events: none;
     transition: opacity 250ms var(--main-cubic-bezier), visibility 250ms var(--main-cubic-bezier);
   }
@@ -1314,6 +1315,15 @@ a {
   color: white;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-image {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
 .portfolio-image__item {
   border: 1px solid var(--portfolio-border-color);
   border-top: none;
@@ -1323,6 +1333,20 @@ a {
 @media screen and (max-width: 767px) {
   .portfolio-image__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-image__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-image__item {
+    flex-basis: calc((100% - 90px) / 3);
   }
 }
 
@@ -1341,5 +1365,11 @@ a {
 
 .portfolio-img__background {
   padding: 20px 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-img__background {
+    height: 144px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
