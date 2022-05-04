@@ -425,10 +425,12 @@ a {
     pointer-events: auto;
   }
   .mobile-menu__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100vw;
     position: relative;
     padding-top: 48px;
-    padding-bottom: 48px;
   }
   .mobile-menu__close-btn {
     position: absolute;
@@ -463,10 +465,6 @@ a {
   }
   .mobile-social-list__link {
     color: var(--accent-page-color);
-  }
-  .contacts {
-    margin-top: 302px;
-    margin-bottom: 64px;
   }
   .contacts__item:not(:last-child) {
     margin-bottom: 32px;
