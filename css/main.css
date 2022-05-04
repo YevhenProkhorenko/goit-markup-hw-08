@@ -1091,6 +1091,12 @@ a {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer-tablet-wrapper {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer-tablet-wrapper {
     display: flex;
@@ -1163,12 +1169,6 @@ a {
 @media screen and (max-width: 1199px) {
   .footer-social-container .secondary-tittle {
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .footer-social-container {
-    margin-bottom: 60px;
   }
 }
 
