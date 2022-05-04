@@ -46,6 +46,12 @@
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--secondary-text-color);
+	@media screen and (max-width: 767px) {
+		 & {
+			font-size: 28px;
+			line-height: 1.17;
+		}
+	}
 	@media screen and (min-width:1200px) {
 		margin-bottom: 50px;
 	}
@@ -60,8 +66,7 @@
 	text-transform: uppercase;
 	color: var(--secondary-text-color);
 	@media screen and (max-width: 767px) {
-		text-align: center;
-				
+		text-align: center;		
 	}
 }
 .modal-form__tittle{

@@ -51,6 +51,13 @@
   color: var(--secondary-text-color);
 }
 
+@media screen and (max-width: 767px) {
+  .section__tittle {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section__tittle {
     margin-bottom: 50px;
@@ -803,9 +810,45 @@ a {
   fill: var(--accent-page-color);
 }
 
+@media screen and (min-width: 768px) {
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages__item {
+    flex-basis: calc((100% - 40px) / 4);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages__item {
+    margin-left: 0px;
+  }
+  .advantages__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .advantages__icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
-  padding: 25px 190px;
   width: 100%;
   height: 120px;
   background-color: var(--team-section-color);
@@ -826,40 +869,6 @@ a {
     align-items: center;
     width: 270px;
     padding: 25px 100px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .advantages {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages {
-    align-items: center;
-    flex-wrap: nowrap;
-    margin-left: 0px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .advantages__item {
-    flex-basis: calc((100% - 40px) / 4);
-    margin-left: 30px;
-    margin-top: 30px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .advantages__item {
-    margin-left: 0px;
-  }
-  .advantages__item:not(:last-child) {
-    margin-bottom: 30px;
   }
 }
 
@@ -936,6 +945,8 @@ a {
   .team-list__item {
     margin-left: 0px;
     margin-top: 0px;
+  }
+  .team-list__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
