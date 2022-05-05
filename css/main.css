@@ -841,6 +841,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .advantages__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .advantages__icon-box {
   display: flex;
   align-items: center;
@@ -852,20 +858,12 @@ a {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 768px) {
-  .advantages__icon-box {
-    padding: 25px 142px;
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages__icon-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
-    padding: 25px 100px;
+    width: 354px;
   }
 }
 

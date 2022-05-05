@@ -26,6 +26,12 @@
                 margin-bottom: 30px; 
             }
     }
+    @media screen and (min-width:1200px) {
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+        
+    }
 }
 .advantages__icon-box {
     display: flex;
@@ -37,16 +43,8 @@
     background-color: var(--team-section-color);
     border-radius: 4px;
 
-    @media screen and (min-width:768px) {
-
-        padding: 25px 142px;
-        width: 354px;
-    }
-
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:768px) and (max-width:1199px){
         @include flex;
-        width: 270px;
-        padding: 25px 100px;
-
+        width: 354px;
     }
 }
