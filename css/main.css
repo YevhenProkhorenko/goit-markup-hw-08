@@ -89,6 +89,20 @@
   color: var(--secondary-text-color);
 }
 
+@media screen and (max-width: 390px) {
+  .modal-form__tittle {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+@media screen and (max-width: 342px) {
+  .modal-form__tittle {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal-form__tittle {
     line-height: 1.15;
@@ -641,6 +655,12 @@ a {
   transition: opacity 250ms var(--main-cubic-bezier), visibility 250ms var(--main-cubic-bezier), transform 250ms var(--main-cubic-bezier);
 }
 
+@media screen and (max-width: 479px) {
+  .backdrop-modal {
+    padding: 15px;
+  }
+}
+
 .backdrop-modal.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -654,11 +674,22 @@ a {
   left: 50%;
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
-  width: 450px;
   height: 609px;
   background: var(--primary-page-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -699,6 +730,13 @@ a {
 
 .modal-form__label:first-of-type {
   margin-top: 12px;
+}
+
+@media screen and (max-width: 342px) {
+  .modal-form__label {
+    font-size: 10px;
+    line-height: 1.2;
+  }
 }
 
 .modal-form__input {
@@ -753,6 +791,13 @@ a {
   font-size: 12px;
   line-height: 1.16;
   cursor: pointer;
+}
+
+@media screen and (max-width: 342px) {
+  .modal-checkbox__label {
+    font-size: 10px;
+    line-height: 1.2;
+  }
 }
 
 @media screen and (min-width: 1200px) {

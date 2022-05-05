@@ -7,6 +7,9 @@
     background: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms var(--main-cubic-bezier), visibility 250ms var(--main-cubic-bezier),
         transform 250ms var(--main-cubic-bezier);
+    @media screen and (max-width: 479px) {
+        padding: 15px;
+    }
 }
 
 .backdrop-modal.is-hidden {
@@ -22,11 +25,17 @@
     left: 50%;
     padding: 40px;
     transform: translate(-50%, -50%) scale(1);
-    width: 450px;
+    
     height: 609px;
     background: var(--primary-page-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    @media screen and (max-width: 479px) {
+        position: relative;
+    }
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
 
     @media screen and (min-width: 1200px) {
         width: 528px;
@@ -60,6 +69,10 @@
         &:first-of-type {
             margin-top: 12px;
         }
+    @media screen and (max-width: 342px) {
+        font-size: 10px;
+        line-height: 1.2;
+    }
 }
 
 .modal-form__input {
@@ -111,6 +124,10 @@
     font-size: 12px;
     line-height: 1.16;
     cursor: pointer;
+    @media screen and (max-width: 342px) {
+        font-size: 10px;
+        line-height: 1.2;
+    }
     @media screen and (min-width: 1200px) {
         font-size: 14px;
         line-height: 1.71;        

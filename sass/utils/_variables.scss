@@ -76,6 +76,14 @@
 	text-align: center;
 	letter-spacing: 0.03em;	
 	color: var(--secondary-text-color);
+	@media screen and (max-width: 390px) {
+		font-size: 14px;
+		line-height: 1.71;
+	}
+	@media screen and (max-width: 342px) {
+		font-size: 12px;
+		line-height: 1.16;
+	}
 	@media screen and (min-width: 1200px) {
 		line-height: 1.15;
 	}
