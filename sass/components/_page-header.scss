@@ -90,11 +90,7 @@
     }
 }
 .header-contacts__item {
-    @media screen and (min-width:768px) { 
-        font-size: 12px;
-        line-height: 1.16;
-        letter-spacing: 0.02em;
-        color: var(--primary-text-color);
+    @media screen and (min-width:768px) {         
         &:not(:last-child){
             margin-bottom: 10px;
         }
