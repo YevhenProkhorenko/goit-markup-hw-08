@@ -846,7 +846,7 @@ a {
   fill: var(--accent-page-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages {
     display: flex;
     flex-wrap: wrap;
@@ -857,9 +857,8 @@ a {
 
 @media screen and (min-width: 1200px) {
   .advantages {
+    display: flex;
     align-items: center;
-    flex-wrap: nowrap;
-    margin-left: 0px;
   }
 }
 
@@ -1139,7 +1138,7 @@ a {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .footer-contacts-wrapper {
     margin-bottom: 60px;
   }
